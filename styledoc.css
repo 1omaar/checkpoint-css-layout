@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+/* header css */
+.debut{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #eef2f2;
+    background: #fff;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-grow: 0.05;
+    color: #ababab;
+    padding: 1% 0;
+}
+.menu > li:hover {
+    color: #00b39b;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+  display: inline-block;
+  
+  
+}
+.dropdown_menu {
+    display: none;
+    position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  list-style: none;
+  width: 200%;
+  right: 0;
+}
+.dropdown_menu >li {
+    padding: 1% 2%;
+}
+.dropdown_menu > li:hover {
+    color: #00b39b;
+    cursor: pointer;
+}
+.dropdown:hover .dropdown_menu {
+    display: block;
+  }
+/* introduction CSS */
+.global {
+    margin-top:  7%;
+}
+.inroduction{
+    margin: 2% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.inroduction div{
+    display: flex;
+}
+.inroduction h1{
+    margin: 5%;
+    color: #00b39b;
+    font-size: 2.125rem;
+}
+.inroduction div p{
+    line-height: 1.5;
+    color: gray;
+    /* width: 41%; */
+    padding: 2%;
+
+}
+/*css choose country */
+.select_main {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 20%;
+}
+.patient_div{
+    background: #00b39b;
+    margin: 0 2%;
+    border-radius: 15px;
+    width: 48%;
+    overflow: hidden;
+}
+.doctors_div {
+    background: #3d83df;
+    margin: 0 2%;
+    border-radius: 15px;
+    width: 48%;
+    overflow: hidden;
+}
+.patient_div >h2, .doctors_div > h2 {
+    color: hsla(0,0%,100%,.7);
+    font-size: .875em;
+    font-weight: normal;
+    padding: 2% 4%;
+}
+.patient_div > h1, .doctors_div > h1 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.625em;
+    padding: 2% 4%;
+}
+.patient_div > select {
+    margin: 2% 4%;
+   padding: 1% 2%;
+    border: 0;
+    border-radius: 3px;                             
+}
+.fig1 {
+    width: 100%;
+    margin-left: 40%;
+    margin-top: -2.3em;
+}
+.fig2 {
+    width: 100%;
+    margin-left: 40%;
+    margin-top: -2.3em;
+    margin-top: 2%;
+}
+
+/*CSS company part*/
+.company {
+    display: flex;
+    margin: 4% 22%;
+    justify-content: space-between;
+}
+.company > ul {
+    display: flex;
+    margin-left: 5%;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+}
+
+svg {
+    width: 64%;
+    height: 40px;
+    fill: hsla(0,0%,67%,.7);
+}
+.company > h2 {
+    color: #00b39b;
+    font-weight: normal;
+    width: 40%;
+}
+/* CSS biggest part */
+.biggest_part {
+    display: flex;
+    background: #e5faf8;
+    background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+    justify-content: space-between;
+    padding: 0 20%;
+   
+    background-image: url('https://www.docplanner.com/img/logo.png');
+    background-repeat: no-repeat;
+    background-position-y: 200px;
+    background-position-x: 230px;
+    
+}
+
+.world_part {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 4% 0;
+    margin-right: 15%;
+    text-align: center;
+    overflow: hidden;
+}
+.div_logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding: 2% 0;
+}
+.logo_doc {
+    padding-top: 20%;
+    bottom: 0;
+}
+.two_logo {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin: 4% 0;
+}
+.two_logo > div {
+    width: 38%;
+    background: #fff; 
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.05);
+    height: 180px;
+    font-size: .8125em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+div>h1 {
+    color: #00b39b;
+}
+.logos {
+    width: 20%;
+    margin: 0 40%;
+    margin-bottom: 7%;
+}
+div > img,h2,p {
+   
+    text-align: center;
+}
+div > h2 {
+     font-size: 20px;;
+    color: #00b39b;
+   
+    
+}
+div > p {
+    font-size: 13px;
+    color: #747474;
+}
+/* CSS contries part */
+.contries{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 10%;
+    justify-content: space-between;
+}
+.contry{
+    margin-bottom: 2%;
+    border-radius: 8px;
+}
+.contry div{
+    display: flex;
+    justify-content: space-between;
+    padding: 6%; display: flex;
+}
+.contry:hover{
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+button {
+    background: #3d83df;
+    color: #fff;
+    border-radius: 2px;
+    padding: 1%;
+    border: 0;
+}
+/* CSS footer */
+footer {
+    border-top: 1px solid #eef2f2;
+    padding: 2% 0;
+    
+}
+footer > p {
+    text-align: center;
+    font-size :10px;
+    color: #ababab;
+}
